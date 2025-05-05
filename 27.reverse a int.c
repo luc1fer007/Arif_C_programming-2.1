@@ -2,9 +2,17 @@
 int main()
 {
     int num;
-    printf("Enter num: ");
+    int rev_num;
+    int digit;
     scanf("%d", &num);
+    rev_num = 0;
 
-    int  num[0]=num[-1];
-    printf("%d",num);
+    while(num)
+    {  digit = num  % 10;
+       rev_num = rev_num *10 + digit;
+       num = num /10;
+       
+    
+    }
+    printf("%d",rev_num);
 }
